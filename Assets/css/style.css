@@ -1,0 +1,62 @@
+:root{
+    --color: rgb(124, 153, 179);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+}
+header{
+    background-color: rgb(67, 72, 77);
+    display: flex;
+    padding: 50px 10px 15px 0px;
+    line-height: 50px;
+    justify-content: space-between;
+    width: auto;
+    font-family: Impact, fantasy;
+}
+nav{
+   padding-right: 50px;
+}
+h1{
+    background-color: rgb(124, 153, 179);
+    color: rgb(67, 72, 77);
+    font-size: 60px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li{
+    margin: 5px 5px;
+    border-bottom: 2px;
+    border-color: rgb(124, 153, 179);
+    border-style: solid;
+    font-size: 50px;
+    padding: 0 5px 0 5px;
+}
+a{
+    color:rgb(124, 153, 179);
+    text-decoration: none;
+}
+
+figure {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/frame.png");
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    background-color: rgb(188, 211, 231);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul, header{
+        flex-direction: column;
+    }
+}
