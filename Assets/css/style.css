@@ -179,7 +179,6 @@ main{
 @media screen and (max-width: 768px) {
     nav ul, header, section{
         flex-direction: column;
-        justify-content:center;
     }
     figure img{
         display: none;
@@ -187,19 +186,20 @@ main{
     .Container{
         flex-direction: column;
         flex-wrap: nowrap;
+        align-items: center;
     }
     .Container .Label{
         margin-left: 0;
         text-align: center;
         border: 5px solid var(--darkgreen);
         margin-bottom: 10px;
-        width: auto;
+        width: 90%;
     }
     #Contact-Me{
         padding-left: 20px;
     }
-    .apps{
-       
+    #contacts{
+        align-items: center;
     }
     .Container .info{
         font-size: 20px;
