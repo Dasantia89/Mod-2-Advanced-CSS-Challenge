@@ -134,9 +134,8 @@ main {
 }
 
 /* Styling for the Work section */
-.apps {
-    display: flex;
-    flex-wrap: wrap;
+#apps {
+    width: 80%;
 }
 
 
