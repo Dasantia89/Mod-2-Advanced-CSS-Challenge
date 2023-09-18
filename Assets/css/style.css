@@ -29,6 +29,7 @@ h1{
 }
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     
 }
 nav ul li{
@@ -165,7 +166,7 @@ main{
 #contacts{
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 .contact {
     color: var(--darkgreen);
@@ -178,12 +179,14 @@ main{
 @media screen and (max-width: 768px) {
     nav ul, header, section{
         flex-direction: column;
+        justify-content:center;
     }
     figure img{
         display: none;
     }
     .Container{
-        justify-content:center ;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .Container .Label{
         margin-left: 0;
@@ -192,8 +195,18 @@ main{
         margin-bottom: 10px;
         width: auto;
     }
+    #Contact-Me{
+        padding-left: 20px;
+    }
+    .apps{
+       
+    }
     .Container .info{
         font-size: 20px;
+    }
+    #first-app, .app{
+        width: 100%;
+        height: auto;
     }
 
 }
