@@ -6,8 +6,7 @@
 body{
     display: flex;
     flex-direction: column;
-    margin: 0;
-    width: 100%;
+    width: auto;
 }
 header{
     background-color: var(--dark);
@@ -61,19 +60,18 @@ main{
 figure{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0;
 }
 
 figure p{
     color: black;
-
+    font-style: italic;
+    padding: 5px;
     background-color: var(--light);
     width:fit-content;
     height: fit-content;  
-    margin: 0 180px 20px 0;
-    padding: 10px;
     font-size: 40px;
     font-weight: 1000;
 }
@@ -81,7 +79,7 @@ figure img{
     border-radius: 50%;
     height: 140px;
     width: 100px;
-    margin: 0 350px 10px 0;
+
     border: solid 5px var(--light);
     flex: 0 5;
 }
@@ -97,8 +95,8 @@ main{
 
 .Container{
     display: flex;
-    padding: 20px;
-    width: 100%;
+    width: auto;
+    padding-bottom: 20px;
 }
 
 .Label{
@@ -110,9 +108,12 @@ main{
     width: 20%;
     height: auto;
     margin-right: 50px;
-    
+    color: var(--darkgreen);
 }
 
+/* #About-me #idlabel{
+    margin-left:-115px;
+} */
 /* #idlabel{
     
 } */
@@ -126,19 +127,19 @@ main{
 }
 
 #first-app{
-    width: 90%;
-    height:auto; 
+    width: 95%;
+    height:600px; 
+    
 }
 
 .apps{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
 }
 
 #apps a .app {
-    width: 45%; 
-    height:auto;
+    width: 47.5%; 
+    height:300px;
     margin: 10px 0 0 0;   
 }
 
@@ -158,9 +159,21 @@ main{
 
 #Contact-Me{
     background-color: rgba(234, 247, 245, 0.911);
-    margin: 0;
-    padding: 0;
+    
 }
+
+#contacts{
+    display: flex;
+    align-items: center;
+    
+}
+.contact {
+    color: var(--darkgreen);
+    font-size:30px;
+    border-bottom: 5px solid var(--darkgreen);
+    margin: 30px;
+}
+
 
 @media screen and (max-width: 768px) {
     nav ul, header, section{
