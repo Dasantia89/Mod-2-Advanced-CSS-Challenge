@@ -112,15 +112,8 @@ main{
     color: var(--darkgreen);
 }
 
-/* #About-me #idlabel{
-    margin-left:-115px;
-} */
-/* #idlabel{
-    
-} */
 
 .Container .info{
-    /* padding-left: 30px; */
     font-size: 30px;
     color: var(--darkgreen);
     width: 80%;
@@ -143,20 +136,6 @@ main{
     height:300px;
     margin: 10px 0 0 0;   
 }
-
-/* #app1{
-   
-}
-
-#app2{
-     
-}
-#app3{
-   
-}
-#app4{
-   
-} */
 
 #Contact-Me{
     background-color: rgba(234, 247, 245, 0.911);
