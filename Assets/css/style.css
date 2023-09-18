@@ -40,7 +40,7 @@ nav ul li{
     font-size: 50px;
     padding: 0 5px 0 5px;
 }
-a{
+nav ul li a{
     color:var(--light);
     text-decoration: none;
 }
@@ -49,7 +49,7 @@ figure {
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/frame.png");
+    background-image: url("../images/frame.jpg");
     background-size:cover;
     background-position: center;
 }
@@ -97,7 +97,8 @@ main{
 .Container{
     display: flex;
     width: auto;
-    padding-bottom: 20px;
+    height: auto;
+    padding: 20px;  
 }
 
 .Label{
@@ -120,9 +121,8 @@ main{
 
 }
 
-#first-app{
-    width: 95%;
-    height:600px; 
+#About-me{
+    margin-right: 50px;
     
 }
 
@@ -131,10 +131,22 @@ main{
     flex-wrap: wrap;
 }
 
+#first-app{
+    width: 95%;
+    height:600px; 
+    border: 5px solid var(--darkgreen);
+    border-radius: 50px;
+
+}
+
+
+
 #apps a .app {
-    width: 47.5%; 
+    width: 46.75%; 
     height:300px;
-    margin: 10px 0 0 0;   
+    margin: 10px 10px 0 0;   
+    border: 5px solid var(--darkgreen);
+    border-radius: 50px;
 }
 
 #Contact-Me{
@@ -148,11 +160,14 @@ main{
     flex-wrap: wrap;
 }
 .contact {
-    color: var(--darkgreen);
+    color: black;
     font-size:30px;
     border-bottom: 5px solid var(--darkgreen);
     margin: 30px;
+    padding-bottom: 20px;
+    text-decoration: none;
 }
+
 
 
 @media screen and (max-width: 768px) {
