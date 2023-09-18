@@ -1,18 +1,21 @@
 /* Set variables to be reused */
 :root {
-    --light: rgb(124, 153, 179);
+    --light: rgba(234, 247, 245, 0.911);
     --dark: rgb(67, 72, 77);
     --darkgreen: #12343b;
+    --dblue: rgb(7, 25, 187);
 }
+
 /* Make elements display in a column */
 body {
     display: flex;
     flex-direction: column;
     width: auto;
 }
+
 /* Styling for the header */
 header {
-    background-color: var(--dark);
+    background-color: var(--darkgreen);
     display: flex;
     padding: 50px 10px 15px 0px;
     line-height: 50px;
@@ -23,7 +26,7 @@ header {
 
 header h1 {
     background-color: var(--light);
-    color: var(--dark);
+    color: var(--darkgreen);
     font-size: 60px;
     padding-top: 5px;
     padding-left: 50px;
@@ -45,13 +48,13 @@ nav ul li {
     border-bottom: 2px;
     border-color: var(--light);
     border-style: solid;
-    font-size: 50px;
+    font-size: 30px;
     padding: 0 5px 0 5px;
 
 }
 
-.link:hover{
-    color: var(--darkgreen);
+.link:hover {
+    color: var(--dark);
 }
 
 nav ul li a {
@@ -75,10 +78,10 @@ figure {
 }
 
 figure p {
-    color: black;
+    color: var(--light);
     font-style: italic;
-    padding: 5px;
-    background-color: var(--light);
+    padding: 10px;
+    background-color: var(--darkgreen);
     width: fit-content;
     height: fit-content;
     font-size: 40px;
@@ -89,14 +92,14 @@ figure img {
     border-radius: 50%;
     height: 140px;
     width: 100px;
-    border: solid 5px var(--light);
+    border: solid 5px var(--darkgreen);
     flex: 0 5;
     margin-bottom: 5pxZa;
 }
 
 /* Styling for the main section  */
 main {
-    background-color: rgba(234, 247, 245, 0.911);
+    background-color: var(--light);
     color: #12343b;
     display: flex;
     flex-direction: column;
@@ -130,7 +133,7 @@ main {
 .Container .info {
     font-size: 30px;
     color: var(--darkgreen);
-    width: 80%;
+    width: 75%;
 }
 
 /* Styling for the Work section */
@@ -149,7 +152,7 @@ main {
 
 /* styling of the app images  */
 #apps a .app {
-    width: 44.25%;
+    width: 44%;
     height: 200px;
     margin: 10px 10px 0 0;
     border: 5px solid var(--darkgreen);
@@ -158,14 +161,14 @@ main {
 
 #apps a .app:hover,
 #first-app:hover {
-    border-color: var(--light);
+    border-color: var(--dblue);
 }
 
 /* styling for the parent link to make it so a title can be displayed*/
 .imgholder {
     position: relative;
 }
- 
+
 /* styling of the title */
 .imgholder h2 {
     font-size: 25px;
@@ -217,9 +220,9 @@ main {
     text-decoration: none;
 }
 
-.contact:hover{
-    color: var(--light);
-    border-color: var(--light);
+.contact:hover {
+    color: rgb(7, 25, 187);
+    border-color: rgb(7, 25, 187);
 }
 
 /* responsive styling for smaller screens */
@@ -242,20 +245,21 @@ main {
     }
 
     .Container .Label {
-        margin-left: 0;
+        margin-left: 40px;
         text-align: center;
         border: 5px solid var(--darkgreen);
         margin-bottom: 10px;
         width: 90%;
     }
 
-    
-    #first-app, .imgholder {
+
+    #first-app,
+    .imgholder {
         width: 100%;
         height: auto;
     }
 
-    #apps a .app{
+    #apps a .app {
         width: 100%;
     }
 
@@ -267,17 +271,18 @@ main {
         border-bottom-right-radius: 50px;
     }
 
-   
-    .imgholder{
+
+    .imgholder {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    .imgholder h2{
+
+    .imgholder h2 {
         font-size: 15px;
     }
 
-    .imgholder p{
+    .imgholder p {
         font-size: 10px;
     }
 
@@ -293,8 +298,8 @@ main {
         font-size: 20px;
     }
 
-  
 
-    
-   
+
+
+
 }
