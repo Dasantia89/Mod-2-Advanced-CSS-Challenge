@@ -123,7 +123,7 @@ main {
     padding-left: 50px;
     border-right: 5px solid var(--darkgreen);
     text-align: right;
-    width: 10%;
+    width: 15%;
     height: auto;
     margin-right: 40px;
     color: var(--darkgreen);
@@ -133,12 +133,12 @@ main {
 .Container .info {
     font-size: 30px;
     color: var(--darkgreen);
-    width: 75%;
+    width: 70%;
 }
 
 /* Styling for the Work section */
 #apps {
-    width: 80%;
+    width: 75%;
 }
 
 
@@ -185,7 +185,7 @@ main {
 /* positioning of the title  */
 .title {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     left: 5px;
     color: var(--light);
     background-color: var(--darkgreen);
@@ -234,9 +234,6 @@ main {
         flex-direction: column;
     }
 
-    figure img {
-        display: none;
-    }
 
     .Container {
         flex-direction: column;
@@ -249,7 +246,7 @@ main {
         text-align: center;
         border: 5px solid var(--darkgreen);
         margin-bottom: 10px;
-        width: 90%;
+        width: 85%;
     }
 
 
@@ -271,6 +268,13 @@ main {
         border-bottom-right-radius: 50px;
     }
 
+    #first-title{
+        color: var(--light);
+        background-color: var(--darkgreen);
+        padding: 10px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
 
     .imgholder {
         display: flex;
