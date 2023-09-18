@@ -80,9 +80,9 @@ figure img{
     border-radius: 50%;
     height: 140px;
     width: 100px;
-
     border: solid 5px var(--light);
     flex: 0 5;
+    margin-bottom: 5px;
 }
 
 main{
