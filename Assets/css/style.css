@@ -1,13 +1,16 @@
 :root{
-    --color: rgb(124, 153, 179);
+    --light: rgb(124, 153, 179);
+    --dark: rgb(67, 72, 77);
+    --darkgreen: #12343b;
 }
 body{
     display: flex;
     flex-direction: column;
-    margin: 0 0;
+    margin: 0;
+    width: 100%;
 }
 header{
-    background-color: rgb(67, 72, 77);
+    background-color: var(--dark);
     display: flex;
     padding: 50px 10px 15px 0px;
     line-height: 50px;
@@ -19,8 +22,8 @@ nav{
    padding-right: 50px;
 }
 h1{
-    background-color: rgb(124, 153, 179);
-    color: rgb(67, 72, 77);
+    background-color: var(--light);
+    color: var(--dark);
     font-size: 60px;
     padding-top: 5px;
     padding-left: 50px;
@@ -32,13 +35,13 @@ nav ul{
 nav ul li{
     margin: 5px 5px;
     border-bottom: 2px;
-    border-color: rgb(124, 153, 179);
+    border-color: var(--light);
     border-style: solid;
     font-size: 50px;
     padding: 0 5px 0 5px;
 }
 a{
-    color:rgb(124, 153, 179);
+    color:var(--light);
     text-decoration: none;
 }
 
@@ -59,29 +62,115 @@ figure{
     flex-direction: column;
     justify-content: end;
     align-items: end;
+    margin-bottom: 0;
 }
 
 figure p{
     color: black;
 
-    background-color: rgb(124, 153, 179);
+    background-color: var(--light);
     width:fit-content;
     height: fit-content;  
-    margin: 0 200px 20px 0;
+    margin: 0 180px 20px 0;
     padding: 10px;
     font-size: 40px;
+    font-weight: 1000;
 }
 figure img{
     border-radius: 50%;
     height: 140px;
     width: 100px;
     margin: 0 350px 10px 0;
-    border: solid 5px rgb(124, 153, 179);
+    border: solid 5px var(--light);
+    flex: 0 5;
+}
+
+main{
+    background-color: rgba(234, 247, 245, 0.911);
+    color:#12343b;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+}
+
+.Container{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.Container .Label{
+    margin-left:100px;
+    font-size: 50px;
+    padding-right:10px;
+    border-right: 5px solid var(--darkgreen);
+    text-align: right;
+    width: 20%;
+    margin-right: 50px;
     
 }
 
+.Container .info{
+    padding-left: 30px;
+    font-size: 30px;
+    color: var(--darkgreen);
+    width: 80%;
+
+}
+
+#first-app{
+    padding-left: 30px;
+    width: 80%;
+    height:fit-content;
+    margin: 0 50px 0 50px; 
+}
+
+.apps{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#apps a .app {
+    width: 50%; 
+    height:auto;
+    margin: 10px;   
+}
+
+/* #app1{
+   
+}
+
+#app2{
+     
+}
+#app3{
+   
+}
+#app4{
+   
+} */
+
 @media screen and (max-width: 768px) {
-    nav ul, header{
+    nav ul, header, section{
         flex-direction: column;
     }
+    figure img{
+        display: none;
+    }
+    .Container{
+        justify-content:center ;
+    }
+    .Container .Label{
+        margin-left: 0;
+        text-align: center;
+        border: 5px solid var(--darkgreen);
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .Container .info{
+        font-size: 20px;
+    }
+
 }
