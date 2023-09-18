@@ -101,7 +101,7 @@ main{
     width: 100%;
 }
 
-.Container > .Label{
+.Label{
     margin-left:50px;
     font-size: 50px;
     padding-right:10px;
@@ -113,9 +113,9 @@ main{
     
 }
 
-#idlabel{
+/* #idlabel{
     
-}
+} */
 
 .Container .info{
     /* padding-left: 30px; */
@@ -155,6 +155,12 @@ main{
 #app4{
    
 } */
+
+#Contact-Me{
+    background-color: rgba(234, 247, 245, 0.911);
+    margin: 0;
+    padding: 0;
+}
 
 @media screen and (max-width: 768px) {
     nav ul, header, section{
