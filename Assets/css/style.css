@@ -1,14 +1,17 @@
-:root{
+/* Set variables to be reused */
+:root {
     --light: rgb(124, 153, 179);
     --dark: rgb(67, 72, 77);
     --darkgreen: #12343b;
 }
-body{
+/* Make elements display in a column */
+body {
     display: flex;
     flex-direction: column;
     width: auto;
 }
-header{
+/* Styling for the header */
+header {
     background-color: var(--dark);
     display: flex;
     padding: 50px 10px 15px 0px;
@@ -17,48 +20,53 @@ header{
     width: auto;
     font-family: Impact, fantasy;
 }
-nav{
-   padding-right: 50px;
-}
-h1{
+
+header h1 {
     background-color: var(--light);
     color: var(--dark);
     font-size: 60px;
     padding-top: 5px;
     padding-left: 50px;
 }
-nav ul{
+
+/* Navigation bar styling  */
+nav {
+    padding-right: 50px;
+}
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
-nav ul li{
+
+nav ul li {
     margin: 5px 5px;
     border-bottom: 2px;
     border-color: var(--light);
     border-style: solid;
     font-size: 50px;
     padding: 0 5px 0 5px;
+
 }
-nav ul li a{
-    color:var(--light);
+
+.link:hover{
+    color: var(--darkgreen);
+}
+
+nav ul li a {
+    color: var(--light);
     text-decoration: none;
 }
 
+/* Banner Styling */
 figure {
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/frame.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-}
-
-main{
-    background-color: rgb(188, 211, 231);
-}
-
-figure{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,17 +74,18 @@ figure{
     margin-bottom: 0;
 }
 
-figure p{
+figure p {
     color: black;
     font-style: italic;
     padding: 5px;
     background-color: var(--light);
-    width:fit-content;
-    height: fit-content;  
+    width: fit-content;
+    height: fit-content;
     font-size: 40px;
     font-weight: 1000;
 }
-figure img{
+
+figure img {
     border-radius: 50%;
     height: 140px;
     width: 100px;
@@ -85,26 +94,29 @@ figure img{
     margin-bottom: 5pxZa;
 }
 
-main{
+/* Styling for the main section  */
+main {
     background-color: rgba(234, 247, 245, 0.911);
-    color:#12343b;
+    color: #12343b;
     display: flex;
     flex-direction: column;
     padding: 20px;
     width: auto;
 }
 
-.Container{
+/* Styling for the element that will hold the main content */
+.Container {
     display: flex;
     width: auto;
     height: auto;
-    padding: 20px;  
+    padding: 20px;
 }
 
-.Label{
-    margin-left:50px;
+/* styling for the label for each section */
+.Label {
+    margin-left: 50px;
     font-size: 50px;
-    padding-right:10px;
+    padding-right: 10px;
     border-right: 5px solid var(--darkgreen);
     text-align: right;
     width: 20%;
@@ -113,50 +125,47 @@ main{
     color: var(--darkgreen);
 }
 
-
-.Container .info{
+/* styling for About me information */
+.Container .info {
     font-size: 30px;
     color: var(--darkgreen);
     width: 80%;
-
 }
 
-#About-me{
-    margin-right: 43px;
-    
-}
-
-.apps{
+/* Styling for the Work section */
+.apps {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-#first-app{
+/* This app is bigger than the rest  */
+#first-app {
     width: 95%;
-    height:400px; 
+    height: 400px;
     border: 5px solid var(--darkgreen);
     border-radius: 50px;
-
 }
 
-.imgholder{
+/* styling for the parent link to make it so a title can be displayed*/
+.imgholder {
     position: relative;
 }
-
-.imgholder h2{
+ 
+/* styling of the title */
+.imgholder h2 {
     font-size: 25px;
     margin: 10px;
     font-weight: 1000;
     border-bottom: 2px solid;
 }
 
-.imgholder p{
+.imgholder p {
     font-size: 15px;
     margin-left: 10px;
 }
 
-.title{
+/* positioning of the title  */
+.title {
     position: absolute;
     bottom: 100px;
     left: 5px;
@@ -167,73 +176,121 @@ main{
     border-bottom-right-radius: 50px;
 }
 
-
+/* styling of the app images  */
 #apps a .app {
-    width: 46.75%; 
-    height:200px;
-    margin: 10px 10px 0 0;   
+    width: 46.75%;
+    height: 200px;
+    margin: 10px 10px 0 0;
     border: 5px solid var(--darkgreen);
     border-radius: 50px;
 }
 
-#apps a .app:hover, #first-app:hover{
+#apps a .app:hover,
+#first-app:hover {
     border-color: var(--light);
 }
 
 
-
-#Contact-Me{
+/* styling for the contact section  */
+#Contact-Me {
     background-color: rgba(234, 247, 245, 0.911);
-    
+
 }
 
-#contacts{
+/* display contacts inline and wrap if needed */
+#contacts {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .contact {
     color: black;
-    font-size:30px;
+    font-size: 30px;
     border-bottom: 5px solid var(--darkgreen);
     margin: 30px;
     padding-bottom: 20px;
     text-decoration: none;
 }
 
+.contact:hover{
+    color: var(--light);
+    border-color: var(--light);
+}
 
-
+/* responsive styling for smaller screens */
 @media screen and (max-width: 768px) {
-    nav ul, header, section{
+
+    nav ul,
+    header,
+    section {
         flex-direction: column;
     }
-    figure img{
+
+    figure img {
         display: none;
     }
-    .Container{
+
+    .Container {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
     }
-    .Container .Label{
+
+    .Container .Label {
         margin-left: 0;
         text-align: center;
         border: 5px solid var(--darkgreen);
         margin-bottom: 10px;
         width: 90%;
     }
-    #Contact-Me{
-        padding-left: 20px;
-    }
-    #contacts{
-        align-items: center;
-    }
-    .Container .info{
-        font-size: 20px;
-    }
-    #first-app, .app{
+
+    
+    #first-app, .imgholder {
         width: 100%;
         height: auto;
     }
 
+    #apps a .app{
+        width: 100%;
+    }
+
+    .title {
+        color: var(--light);
+        background-color: var(--darkgreen);
+        padding: 10px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+   
+    .imgholder{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .imgholder h2{
+        font-size: 15px;
+    }
+
+    .imgholder p{
+        font-size: 10px;
+    }
+
+    #Contact-Me {
+        padding-left: 20px;
+    }
+
+    #contacts {
+        align-items: center;
+    }
+
+    .Container .info {
+        font-size: 20px;
+    }
+
+  
+
+    
+   
 }
