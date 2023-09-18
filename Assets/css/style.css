@@ -57,6 +57,7 @@ figure {
 main{
     background-color: rgb(188, 211, 231);
 }
+
 figure{
     display: flex;
     flex-direction: column;
@@ -100,19 +101,24 @@ main{
     width: 100%;
 }
 
-.Container .Label{
-    margin-left:100px;
+.Container > .Label{
+    margin-left:50px;
     font-size: 50px;
     padding-right:10px;
     border-right: 5px solid var(--darkgreen);
     text-align: right;
     width: 20%;
+    height: auto;
     margin-right: 50px;
     
 }
 
+#idlabel{
+    
+}
+
 .Container .info{
-    padding-left: 30px;
+    /* padding-left: 30px; */
     font-size: 30px;
     color: var(--darkgreen);
     width: 80%;
@@ -120,10 +126,8 @@ main{
 }
 
 #first-app{
-    padding-left: 30px;
-    width: 80%;
-    height:fit-content;
-    margin: 0 50px 0 50px; 
+    width: 90%;
+    height:auto; 
 }
 
 .apps{
@@ -133,9 +137,9 @@ main{
 }
 
 #apps a .app {
-    width: 50%; 
+    width: 45%; 
     height:auto;
-    margin: 10px;   
+    margin: 10px 0 0 0;   
 }
 
 /* #app1{
