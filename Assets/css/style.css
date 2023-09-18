@@ -109,19 +109,20 @@ main {
     display: flex;
     width: auto;
     height: auto;
-    padding: 20px;
+    margin-bottom: 50px;
 }
 
 /* styling for the label for each section */
 .Label {
-    margin-left: 50px;
-    font-size: 50px;
-    padding-right: 10px;
+    margin-left: 0;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-left: 50px;
     border-right: 5px solid var(--darkgreen);
     text-align: right;
-    width: 20%;
+    width: 10%;
     height: auto;
-    margin-right: 50px;
+    margin-right: 40px;
     color: var(--darkgreen);
 }
 
@@ -138,12 +139,27 @@ main {
     flex-wrap: wrap;
 }
 
+
 /* This app is bigger than the rest  */
 #first-app {
-    width: 95%;
+    width: 90%;
     height: 400px;
     border: 5px solid var(--darkgreen);
     border-radius: 50px;
+}
+
+/* styling of the app images  */
+#apps a .app {
+    width: 44.25%;
+    height: 200px;
+    margin: 10px 10px 0 0;
+    border: 5px solid var(--darkgreen);
+    border-radius: 50px;
+}
+
+#apps a .app:hover,
+#first-app:hover {
+    border-color: var(--light);
 }
 
 /* styling for the parent link to make it so a title can be displayed*/
@@ -176,25 +192,14 @@ main {
     border-bottom-right-radius: 50px;
 }
 
-/* styling of the app images  */
-#apps a .app {
-    width: 46.75%;
-    height: 200px;
-    margin: 10px 10px 0 0;
-    border: 5px solid var(--darkgreen);
-    border-radius: 50px;
-}
 
-#apps a .app:hover,
-#first-app:hover {
-    border-color: var(--light);
-}
 
 
 /* styling for the contact section  */
 #Contact-Me {
     background-color: rgba(234, 247, 245, 0.911);
-
+    padding: 20px;
+    width: auto;
 }
 
 /* display contacts inline and wrap if needed */
